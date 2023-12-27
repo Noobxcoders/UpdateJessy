@@ -127,7 +127,7 @@ async def skip(cli, message: Message, _, chat_id):
             return await message.reply_text(_["call_9"])
 
         button = telegram_markup(_, chat_id)
-        img = await gen_thumb(videoid, user_id)
+        img = await gen_thumb(videoid)
         run = await message.reply_photo(
             photo=img,
             caption=_["stream_1"].format(
