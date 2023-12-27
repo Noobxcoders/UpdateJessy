@@ -1,17 +1,16 @@
-# KANGERS....KANGERS...KANGERS. . . 
-# OBVIOUSLY YOU ARE HERE TO STEAL CODE. . LMAO
-# GIVE PROPER CREDITS IF YOU USE THIS SPECIFIC FILE IN YOUR REPO
-# ELSE YOU ARE A SON OF A SHITTYYY BITCCCHHHH & HAVING SO MANY DADDIESSSS
-# ANDI MANDI SANDI JO COPY KRKE CREDIT NA DE USKI MAA RANDI
-
 import os
 import re
+import textwrap
+
 import aiofiles
 import aiohttp
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
+import numpy as np
+
+from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from youtubesearchpython.__future__ import VideosSearch
-from AnonX import app
+
 from config import YOUTUBE_IMG_URL
+from AnonX import app
 
 def changeImageSize(maxWidth, maxHeight, image):
     widthRatio = maxWidth / image.size[0]
