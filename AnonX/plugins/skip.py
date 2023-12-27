@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
 from AnonX import YouTube, app
-from AnonX.core.call import AnonX
+from AnonX.core.call import Anon
 from AnonX.misc import db
 from AnonX.utils.database import get_loop
 from AnonX.utils.decorators import AdminRightsCheck
